@@ -872,8 +872,8 @@ img[class*='wp-image-'] {
 .assistive-text,
 .site-description,
 .entry-meta,
-.page-slug-wordcamp-moscow-2017 .entry-header,
-.page-slug-wordcamp-moscow-2017 .edit-link {
+.page-slug-wordcamp-moscow-2018 .entry-header,
+.page-slug-wordcamp-moscow-2018 .edit-link {
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -884,18 +884,18 @@ img[class*='wp-image-'] {
 .assistive-text:hover,
 .site-description:hover,
 .entry-meta:hover,
-.page-slug-wordcamp-moscow-2017 .entry-header:hover,
-.page-slug-wordcamp-moscow-2017 .edit-link:hover,
+.page-slug-wordcamp-moscow-2018 .entry-header:hover,
+.page-slug-wordcamp-moscow-2018 .edit-link:hover,
 .assistive-text:active,
 .site-description:active,
 .entry-meta:active,
-.page-slug-wordcamp-moscow-2017 .entry-header:active,
-.page-slug-wordcamp-moscow-2017 .edit-link:active,
+.page-slug-wordcamp-moscow-2018 .entry-header:active,
+.page-slug-wordcamp-moscow-2018 .edit-link:active,
 .assistive-text:focus,
 .site-description:focus,
 .entry-meta:focus,
-.page-slug-wordcamp-moscow-2017 .entry-header:focus,
-.page-slug-wordcamp-moscow-2017 .edit-link:focus {
+.page-slug-wordcamp-moscow-2018 .entry-header:focus,
+.page-slug-wordcamp-moscow-2018 .edit-link:focus {
 	display: block;
 	clip: auto !important;
 	z-index: 100000;
@@ -1392,11 +1392,11 @@ body.admin-bar #tix {
 
 /* Homepage */
 
-.page-slug-wordcamp-moscow-2017 .site-footer {
+.page-slug-wordcamp-moscow-2018 .site-footer {
 	border-top: none;
 }
 
-.page-slug-wordcamp-moscow-2017 .entry-content {
+.page-slug-wordcamp-moscow-2018 .entry-content {
 	margin-bottom: 0;
 }
 
