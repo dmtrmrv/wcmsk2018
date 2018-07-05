@@ -1,0 +1,103 @@
+// Text.
+$color__text: #585858;
+$color__text-secondary: rgba( $color__text, 0.39 );
+$color__text-light: rgba( $color__text, 0.15 );
+$color__text-lighter: rgba( $color__text, 0.05 );
+
+//Headings.
+$color__headings: #1e1e1e;
+
+// Code Samples a.k.a <pre>
+$color__code-text: #fff;
+$color__code-bg: #1e1e1e;
+
+// Body.
+$color__background-body: #f0f0f0;
+
+// Theme Accent Color.
+$color__accent: #7743c7;
+$color__accent-secondary: #0dd9a1;
+
+// States.
+$color__success: #1fc281;
+$color__info: #00b9f2;
+$color__warning: #f4cc31;
+$color__danger: #e83337;
+
+// Header.
+$color__header-bg: #fff;
+$color__header-text: $color__text;
+
+// Footer.
+$color__footer-bg: $color__text-light;
+$color__footer-text: $color__text-secondary;
+
+// Button Default.
+$color__button: (
+	text:             $color__text,
+	border:           $color__text-secondary,
+	background:       transparent,
+	hover_text:       #fff,
+	hover_border:     $color__text,
+	hover_background: $color__text,
+);
+
+// Button Accent.
+$color__button-accent: (
+	text:             #fff,
+	border:           $color__accent,
+	background:       $color__accent,
+	hover_text:       $color__accent,
+	hover_border:     $color__accent,
+	hover_background: transparent,
+);
+
+// Button Accent.
+$color__button-border: (
+	text:             $color__accent,
+	border:           $color__accent,
+	background:       transparent,
+	hover_text:       #fff,
+	hover_border:     $color__accent,
+	hover_background: $color__accent,
+);
+
+// Button Success.
+$color__button-success: (
+	text:             #fff,
+	border:           $color__success,
+	background:       $color__success,
+	hover_text:       $color__success,
+	hover_border:     $color__success,
+	hover_background: transparent,
+);
+
+// Button Info.
+$color__button-info: (
+	text:             #fff,
+	border:           $color__info,
+	background:       $color__info,
+	hover_text:       $color__info,
+	hover_border:     $color__info,
+	hover_background: transparent,
+);
+
+// Button Warning.
+$color__button-warning: (
+	text:             #fff,
+	border:           $color__warning,
+	background:       $color__warning,
+	hover_text:       $color__warning,
+	hover_border:     $color__warning,
+	hover_background: transparent,
+);
+
+// Button Danger.
+$color__button-danger: (
+	text:             #fff,
+	border:           $color__danger,
+	background:       $color__danger,
+	hover_text:       $color__danger,
+	hover_border:     $color__danger,
+	hover_background: transparent,
+);

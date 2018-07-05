@@ -1,0 +1,17 @@
+/* Entry Title */
+
+.entry-title {
+	a {
+		color: $color__headings;
+	}
+	.blog &, {
+		margin-bottom: 0.5625em; // 1.5rem or 13.5px
+	}
+	.single-page & {
+		margin-bottom: 24px;
+		line-height: 1.5rem;
+		@media screen and ( min-width: $sm ) {
+			margin-bottom: 3rem;
+		}
+	}
+}

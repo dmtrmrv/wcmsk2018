@@ -1,0 +1,53 @@
+/* Helpers */
+
+.col-wrap {
+	@include with-layout( $susy-static ) {
+		max-width: span( 6 );
+	}
+	&.center-block {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.cols,
+.col {
+	@extend .clear;
+}
+
+@media screen and ( min-width: $sm ) {
+	.cols-2 .col {
+		@include span( 6 );
+	}
+
+	.cols-3 .col {
+		@include span( 4 );
+	}
+
+	.cols-4 .col {
+		@include span( 3);
+	}
+}
+
+.col.last {
+	margin-right: 0 !important;
+}
+
+.mb0 {
+	margin-bottom: 0;
+}
+
+@include with-layout( $susy-static ){
+	.not-too-wide {
+		@media screen and( min-width: $sm ) {
+			max-width: span( 8 );
+		}
+	}
+}
+
+.lead {
+	@media screen and( min-width: $sm ) {
+		font-size: 21px;
+		margin-bottom: 1.5rem;
+	}
+}

@@ -1,0 +1,125 @@
+/**
+ * Widgets
+ */
+
+.widget {
+	margin: 0 0 3em;
+	background-color: $color__text-lighter;
+	word-wrap: break-word;
+	.widget-area & {
+		padding: 1.5em;
+	}
+	select {
+		max-width: 100%;
+	}
+	&:not( .widget_text ) {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+	}
+}
+
+.widget_search {
+	margin-bottom: 1.5em;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	.search-submit {
+		display: none;
+	}
+	@media screen and ( min-width: $sm ) {
+		margin-bottom: 3em;
+	}
+}
+
+.widget_calendar {
+	caption {
+		@include font-size( 0.625 );
+		@include line-height( 1.5 );
+		color: #fff;
+		background-color: $color__text;
+		font-weight: normal;
+		letter-spacing: ( 1em / 16 );
+		text-transform: uppercase;
+	}
+	table {
+		max-width: 100%;
+		margin-bottom: 0;
+	}
+	td,
+	th {
+		@include font-size( 0.75 );
+		padding: 0 ;
+		line-height: 2em;
+		text-align: center;
+	}
+	td, {
+		line-height: em_minus_px( 2em, 1px, $font__size-body-px * 0.75 );
+	}
+	th {
+		line-height: em_minus_px( 2em, 2px, $font__size-body-px * 0.75 );
+	}
+	tfoot td:first-child {
+		padding-left: 0.75em;
+		text-align: left;
+	}
+	tfoot td:last-child {
+		padding-right: 0.75em;
+		text-align: right;
+	}
+}
+
+.widget.widget_recent_comments,
+.widget.widget_recent_entries {
+	li {
+		margin-bottom: 0.75em;
+		padding-bottom: em_minus_px( 0.75em, 1px );
+		border-bottom: 1px solid;
+		border-bottom-color: $color__text-light;
+		&:last-child {
+			margin-bottom: 0;
+			border-bottom: none;
+		}
+	}
+}
+
+.widget_rss {
+	.widget-title {
+		a:first-child {
+			display: none;
+		}
+	}
+	li {
+		margin-bottom: 1.5em;
+	}
+	a {
+		display: block;
+	}
+	cite {
+		margin: 0;
+		color: $color__text-secondary;
+	}
+	.rss-date {
+		@include font-size( 0.75 );
+		@include line-height( 1.5 );
+		display: block;
+		margin: 0;
+		color: $color__text-secondary;
+	}
+}
+
+.widget.widget_nav_menu {
+	ul ul {
+		margin-left: 1em;
+	}
+}
+
+.widget-title {
+	@include font-size( 1 );
+	margin-bottom: 13.5px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}

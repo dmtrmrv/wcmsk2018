@@ -1,0 +1,49 @@
+/* Structure */
+
+body {
+	background-color: #fff;
+}
+
+.site {
+	max-width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 1.5em 0;
+	@media screen and ( min-width: $sm ) {
+		padding: 0 3em;
+	}
+}
+
+.wrap {
+	max-width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 1.5em 0;
+	@media screen and ( min-width: $sm ) {
+		padding: 0 3em;
+	}
+}
+
+#main {
+	@extend .clear;
+}
+
+.site-content {
+	margin-right: auto;
+	margin-left: auto;
+	@media screen and ( min-width: $sm ) {
+		@include span(8);
+		max-width: 100%;
+	}
+}
+
+.widget-area {
+	@include with_layout( $susy-static ) {
+		max-width: span( 6 );
+	}
+	margin-right: auto;
+	margin-left: auto;
+	@media screen and ( min-width: $sm ) {
+		@include span( 4 last );
+	}
+}

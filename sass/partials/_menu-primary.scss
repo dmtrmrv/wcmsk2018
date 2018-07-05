@@ -1,0 +1,168 @@
+/* Primary Menu */
+
+.site-header .site-navigation {
+	width: 100%;
+	ul {
+		display: none;
+		margin: 0;
+		padding: 0.75em 0;
+		list-style: none;
+		ul {
+			display: block;
+			margin: 0;
+			padding: 0;
+			border-bottom: 0;
+		}
+	}
+	a {
+		display: block;
+		padding: 0.6em;
+		font-size: 15px;
+		color: $color__text;
+		line-height: 1.2;
+		text-align: center;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and ( min-width: 600px ) {
+	.site-header .site-navigation {
+		background-color: $color__header-bg;
+		ul {
+			display: block;
+			width: auto;
+			margin: 1.5em auto 0;
+			padding: 0;
+			border-bottom: 0;
+			text-align: center;
+			list-style: none;
+			ul {
+				float: left;
+				position: absolute;
+				z-index: 99999;
+				top: 100%;
+				left: -999em;
+				margin: 0;
+				padding: 0.75em 0 0.75em;
+				border: 1px solid $color__text-light;
+				border-top: 3px solid $color__accent;
+				background-color: #fff;
+				text-align: left;
+				ul {
+					top: 0;
+					left: -999em;
+				}
+				li {
+					&:hover > ul,
+					&.focus > ul {
+						left: 100%;
+					}
+				}
+				a {
+					width: 15em;
+					padding: 0 1.2em;
+					font-weight: normal;
+				}
+			}
+			li:hover > ul,
+			li.focus > ul {
+				left: -0.75em;
+			}
+		}
+		li {
+			display: inline-block;
+			position: relative;
+		}
+		a {
+			padding: 18px 6px;
+			background-color: #fff;
+			text-align: left;
+		}
+	}
+}
+
+@media screen and ( min-width: 880px ) {
+	.site-header .site-navigation {
+		float: right;
+		width: auto;
+		margin-top: 2em;
+		margin-right: -0.5em;
+		text-align: right;
+		ul {
+			margin-top: 0;
+			li:hover > ul,
+			li.focus > ul {
+				left: -0.5em;
+			}
+		}
+		a {
+			padding: 18px 9px;
+		}
+	}
+}
+
+/* Toggle Hamburger */
+
+$dash_height: 1px;
+$dash_width: 1.5em;
+
+.menu-toggle {
+	display: block;
+	position: absolute;
+	z-index: 1001;
+	top: 0;
+	right: 0;
+	width: 3em;
+	height: 3em;
+	padding: 0;
+	background-color: $color__accent;
+	font-size: $font__size-body-px;
+	text-align: left;
+	text-indent: -9999px;
+	.admin-bar & {
+		top: 46px;
+	}
+	&:hover,
+	&:focus {
+		background-color: rgba( $color__accent, 0.9 );
+	}
+	@media screen and ( min-width: 600px ) {
+		display: none;
+	}
+	// The icon.
+	&:before,
+	&:after {
+		display: block;
+		position: absolute;
+		left: 25%;
+		width: $dash_width;
+		height: $dash_height;
+		background-color: #fff;
+		content: '';
+	}
+	&:before {
+		top: 20px;
+	}
+	&:after {
+		bottom: 20px;
+	}
+}
+
+.menu-toggle.toggled-on {
+	&:before {
+		top: 23px;
+		transform: rotate( 225deg );
+	}
+	&:after {
+		bottom: 24px;
+		transform: rotate( -225deg );
+	}
+}
+
+.accent-menu-item a {
+	background-color: #7743c7 !important;
+	color: #fff !important;
+	font-weight: 700;
+	padding: 18px !important;
+}

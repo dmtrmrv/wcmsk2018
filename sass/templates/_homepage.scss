@@ -1,0 +1,182 @@
+/* Homepage */
+
+.page-slug-wordcamp-moscow-2017 {
+	.entry-header,
+	.edit-link {
+		@extend .assistive-text;
+	}
+	.site-footer {
+		border-top: none;
+	}
+	.entry-content {
+		margin-bottom: 0;
+	}
+}
+
+// Hero
+.wcm-hero {
+	padding: 15% ;
+	padding: 15% 0 calc( 15% - 1.5em );
+	color: #fff;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: cover;
+	h2 {
+		color: #fff;
+		font-size: 1.5em;
+		line-height: 1.1;
+		@media screen and( min-width: $md ) {
+			font-size: 48px;
+		}
+	}
+	p {
+		@media screen and( min-width: $sm ) {
+			font-size: 21px;
+		}
+	}
+	a:not(.button) {
+		color: #fff;
+		text-decoration: underline;
+	}
+}
+
+.wcm-why {
+	padding: 7.5% 0;
+	padding: 7.5% 0 calc( 7.5% - 1.5em );
+	background-color: $color__text-lighter;
+}
+
+// Speakers.
+.wcm-speakers {
+	padding: 7.5% 0;
+	padding: 7.5% 0 calc( 7.5% - 1.5em );
+	h2 {
+		margin-bottom: 1.5rem;
+		@media screen and( min-width: $sm ) {
+			margin-bottom: 4rem;
+		}
+	}
+}
+
+.wcm-speaker {
+	margin-bottom: 1.5em;
+	@media screen and ( min-width: $sm ) {
+		@include span( 3 );
+		margin-bottom: 1.5rem;
+	}
+	&.last {
+		margin-right: 0;
+	}
+}
+
+.wcm-speaker-img {
+	margin-bottom: 1em;
+	img {
+		display: block;
+	}
+	a {
+		display: block;
+	}
+}
+
+.wcm-speaker-name {
+	margin-bottom: 0;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.wcm-speaker-sub {
+
+}
+
+// Sponsors.
+.wcm-sponsors {
+	padding: 7.5% 0;
+	padding: 7.5% 0 calc( 7.5% - 1.5em );
+	background-color: rgba(88,88,88,0.05);
+	h2 {
+		margin-bottom: 1.5rem;
+		@media screen and( min-width: $sm ) {
+			margin-bottom: 4rem;
+		}
+	}
+}
+
+.wcm-sponsor {
+	margin-bottom: 1.5em;
+	border: 1px solid $color__text-light;
+	background-color: rgb( 250, 250, 250 );
+	a {
+		display: block;
+	}
+	img {
+		display: block;
+		width: 100%;
+	}
+	&.wcm-sponsor-empty {
+		display: none;
+		@media screen and( min-width: $sm ) {
+			display: block;
+		}
+	}
+}
+
+.wcm-sponsors-platinum .wcm-sponsor {
+	@media screen and ( min-width: $sm ) {
+		@include span( 4 );
+		margin-bottom: 1.5rem;
+	}
+	&:nth-of-type(3n) {
+		margin-right: 0;
+	}
+}
+
+.wcm-sponsors-gold .wcm-sponsor {
+	@media screen and ( min-width: $sm ) {
+		@include span( 3 );
+		margin-bottom: 1.5rem;
+	}
+	&:nth-of-type(4n) {
+		margin-right: 0;
+	}
+}
+
+.wcm-sponsors-silver .wcm-sponsor {
+	@media screen and ( min-width: $sm ) {
+		@include span( 2 );
+		margin-bottom: 1.5rem;
+	}
+	&:nth-of-type(6n) {
+		margin-right: 0;
+	}
+}
+
+.wcm-sponsors-bronze .wcm-sponsor {
+	@media screen and ( min-width: $sm ) {
+		@include span( 2 );
+		margin-bottom: 1.5em;
+	}
+	&:nth-of-type(6n) {
+		margin-right: 0;
+	}
+}
+
+// Hero
+.wcm-cta {
+	padding: 7.5% 0;
+	padding: 7.5% 0 calc( 7.5% - 1.5em );
+	color: #fff;
+	background-color: $color__accent;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: cover;
+	h2 {
+		color: #fff;
+	}
+	p {
+		margin-bottom: 1.5rem;
+		@media screen and( min-width: $sm ) {
+			font-size: 21px;
+		}
+	}
+}

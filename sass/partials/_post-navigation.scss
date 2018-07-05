@@ -1,0 +1,18 @@
+/* Post Navigation (Next/Previous Post) */
+
+.paging-navigation {
+	@extend .clear;
+	margin-bottom: 1.5em;
+	@media screen and ( min-width: $sm ) {
+		margin-bottom: 3em;
+	}
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+	.nav-next {
+		float: right;
+		width: 50%;
+		text-align: right;
+	}
+}

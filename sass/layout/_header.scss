@@ -1,0 +1,43 @@
+/* Header */
+
+.site-header {
+	@extend .clear;
+	padding: 1.5em 0;
+	background-color: #fff;
+	@media screen and ( min-width: 880px ) {
+		padding: 3em 0;
+	}
+
+}
+
+hgroup {
+	@media screen and (min-width: 880px ) {
+		float: left;
+		@include with-layout( $susy-static ) {
+			width: span( 2 );
+		}
+	}
+}
+
+.site-title {
+	@include with-layout( $susy-static ) {
+		width: span( 2 );
+	}
+	margin: 0 auto;
+	color: transparent;
+	text-indent: -9999px;
+	a {
+		@include with-layout( $susy-static ) {
+			width: span( 2 );
+			height: span( 2 );
+			background-size: span( 2 ) span( 2 );
+		}
+		display: block;
+		background-image: url( 'https://2017.moscow.wordcamp.org/files/2017/06/wcmsk-logo-v1.png' );
+		background-repeat: no-repeat;
+	}
+}
+
+.site-description {
+	@extend .assistive-text;
+}

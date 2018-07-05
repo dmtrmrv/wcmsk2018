@@ -1,0 +1,87 @@
+/* Forms */
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+textarea {
+	@include font-size( 1 );
+	width: 100%;
+	padding: em_minus_px( 0.75em, 1px ) 1em;
+	border: 1px solid;
+	border-color: $color__text-secondary;
+	-webkit-appearance: none;
+	color: $color__text;
+	background-color: transparent;
+	box-shadow: none;
+	line-height: 1.5;
+	vertical-align: middle;
+	&:focus {
+		outline: 0;
+		border-color: $color__accent;
+	}
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'] {
+	// height: 3em; // Say hello to IE.
+}
+
+label {
+	color: $color__text;
+}
+
+// Placeholder text color - selectors need to be separate to work.
+::-webkit-input-placeholder {
+	color: $color__text-secondary;
+}
+
+:-moz-placeholder {
+	color: $color__text-secondary;
+}
+
+// Since FF19 lowers the opacity of the placeholder by default.
+::-moz-placeholder {
+	opacity: 1;
+	color: $color__text-secondary;
+}
+
+// Only works if set as 'input:-ms-input-placeholder' not just 'input:-ms-input-placeholder'.
+input:-ms-input-placeholder {
+	color: $color__text-secondary;
+}
+
+.post-password-form {
+	position: relative;
+}
+
+.post-password-form label {
+	display: block;
+}
+
+.post-password-form input[type='submit'] {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.search-form {
+	position: relative;
+	margin-bottom: 1.5em;
+}
+
+.search-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+input[type='submit'].search-submit {
+	@extend .button-accent;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}

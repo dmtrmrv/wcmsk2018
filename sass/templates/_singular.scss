@@ -1,0 +1,36 @@
+/* Single */
+
+.entry-title {
+	margin-bottom: 1.5rem;
+	@media screen and( min-width: $md ) {
+		margin-bottom: 2.75rem;
+	}
+}
+
+.entry-content,
+.entry-summary {
+	margin-bottom: 3em;
+	word-wrap: break-word;
+	hyphens: auto;
+	@media screen and( min-width: $sm ) {
+		margin-bottom: 4.5em;
+	}
+}
+
+.edit-link {
+	display: none;
+}
+
+.page-slug-wordcamp-moscow-2017,
+.page-slug-schedule,
+.page-slug-sponsors,
+.page-slug-tickets {
+	.widget-area {
+		display: none;
+	}
+	@media screen and (min-width: $sm) {
+		.site-content {
+			width: 100%;
+		}
+	}
+}

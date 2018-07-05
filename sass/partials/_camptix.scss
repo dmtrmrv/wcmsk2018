@@ -1,0 +1,51 @@
+/**
+ * Camptix overrides.
+ */
+
+body.admin-bar #tix {
+	padding-top: 0;
+}
+#tix {
+	input[type=submit] {
+		@extend .button-accent;
+	}
+}
+.page-slug-tickets {
+	.tix-attendee-form {
+		th,
+		td.tix-left {
+			padding-left: 0;
+		}
+		td.tix-right {
+			padding-right: 0;
+		}
+		input[type='text'],
+		input[type='email'],
+		input[type='url'],
+		textarea {
+			width: 100%;
+		}
+	}
+	.tix-row-coupon {
+		td {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+	#tix-coupon-container {
+		position: relative;
+		.tix-coupon-input {
+			margin-bottom: 0.75em;
+			@media screen and (min-width: $sm) {
+				margin-bottom: 0;
+			}
+		}
+		input[type='submit'] {
+			@media screen and (min-width: $sm) {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+	}
+}

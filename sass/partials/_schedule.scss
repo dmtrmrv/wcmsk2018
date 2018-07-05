@@ -1,0 +1,137 @@
+/**
+ * Schedule Special Styles
+ */
+.wcpt-schedule {
+	td,
+	th {
+		vertical-align: top;
+		@media screen and ( min-width: $sm ) {
+			padding: 1.5em;
+		}
+	}
+}
+
+.wcpt-track-description {
+	display: none;
+}
+
+.wcpt-track-name {
+	@include font-size( 1 );
+	margin-bottom: 0;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.wcpt-session-title,
+.wcpt-session-speakers {
+	display: block;
+}
+
+.global-session {
+	td {
+		background-color: $color__text-lighter;
+	}
+	.wcpt-session-title {
+		color: $color__text-secondary;
+		font-weight: normal;
+	}
+}
+
+.wcpt-session-title {
+	font-weight: bold;
+}
+
+.wcpt-session-speakers {
+	color: $color__text-secondary;
+}
+
+
+
+.wcpt-session-type-session:after {
+	display: block;
+	float: left;
+	margin-top: 0.5em;
+	padding: 2px 0.75em 3px;
+	border: 2px solid;
+	border-radius: 1em;
+	font-size: 0.75em;
+	font-weight: 700;
+}
+
+.wcb-session-nikolay-mironov,
+.wcb-session-gennady-kovshenin,
+.wcb-session-konstantin-kovshenin,
+.wcb-session-sergey-biryukov,
+.wcb-session-nikolay-korobochkin {
+	&:after {
+		border-color: #3dceff;
+		content: 'Разработка';
+	}
+}
+
+.wcb-session-pavel-karpov {
+	&:after {
+		border-color: #eb7f00;
+		content: 'SEO';
+	}
+}
+
+.wcb-session-ruslan-sukhar,
+.wcb-speaker-boris-gorelik {
+	&:after {
+		border-color: #f5ea54;
+		content: 'Контент';
+	}
+}
+
+.wcb-speaker-evgeny-karsky {
+	&:after {
+		border-color: #a9cf54;
+		content: 'Бизнес';
+	}
+}
+
+.wcb-session-dmitry-mayorov {
+	&:after {
+		border-color: #e74c3c;
+		content: 'Дизайн';
+	}
+}
+
+.wcb-speaker-sergey-popov,
+.wcb-session-nikolay-mironov {
+	&:after {
+		border-color: #b8ae9c;
+		content: 'Фронтенд';
+	}
+}
+
+.wcb-speaker-grigory-zemskov {
+	&:after {
+		border-color: #8a0917;
+		content: 'Безопасность';
+	}
+}
+
+.wcb-speaker-anastasia-ogudina {
+	&:after {
+		border-color: #d9fad5;
+		content: 'Обучение';
+	}
+}
+
+.wcb-speaker-anna-ladoshkina {
+	&:after {
+		border-color: #db9e36;
+		content: 'Производительность';
+	}
+}
+
+.wcb-speaker-alexander-urozhaev,
+.wcb-speaker-misha-rudrastyh {
+	&:after {
+		border-color: #7743c7;
+		content: 'eCommerce';
+	}
+}

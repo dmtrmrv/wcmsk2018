@@ -1,0 +1,98 @@
+/* Buttons */
+
+@mixin button-core {
+	display: inline-block;
+	margin: 0;
+	-webkit-appearance: none;
+	background-image: none;
+	line-height: 1;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-decoration: none;
+	cursor: pointer;
+	// touch-action: manipulation;
+	&:active {
+		outline: 0;
+	}
+	&:focus {
+		@include focus;
+	}
+}
+
+@mixin button-color( $colors ) {
+	border-color: map-get( $colors, border );
+	color: map-get( $colors, text );
+	background-color: map-get( $colors, background );
+	&:hover,
+	&:focus {
+		border-color: map-get( $colors, hover_border );
+		color: map-get( $colors, hover_text );
+		background-color: map-get( $colors, hover_background );
+		text-decoration: none; // Don't remove. If put in the button-core(), creates many extra lines of CSS.
+	}
+}
+
+.button {
+	@include button-core;
+	@include button-color( $color__button );
+	@include font-size( 16/18 );
+	padding: 1.25em 1.5em;
+	border: 1px solid;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@extend .button;
+}
+
+.button-accent {
+	border-color: $color__accent;
+	color: #fff;
+	background-color: $color__accent;
+	&:hover,
+	&:focus {
+		border-color: $color__accent;
+		color: #fff;
+		background-color: lighten( $color__accent, 10%);
+		text-decoration: none; // Don't remove. If put in the button-core(), creates many extra lines of CSS.
+	}
+}
+
+.button-accent-secondary {
+	border-color: $color__accent-secondary;
+	color: #fff;
+	background-color: $color__accent-secondary;
+	&:hover,
+	&:focus {
+		border-color: $color__accent-secondary;
+		color: #fff;
+		background-color: lighten( $color__accent-secondary, 10%);
+		text-decoration: none; // Don't remove. If put in the button-core(), creates many extra lines of CSS.
+	}
+}
+
+.button-border {
+	@include button-color( $color__button-border );
+}
+
+.button-success {
+	@include button-color( $color__button-success );
+}
+
+.button-info {
+	@include button-color( $color__button-info );
+}
+
+.button-warning {
+	@include button-color( $color__button-warning );
+}
+
+.button-danger {
+	@include button-color( $color__button-danger );
+}

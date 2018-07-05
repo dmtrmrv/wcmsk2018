@@ -1,0 +1,135 @@
+/* Alignments */
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	@include center-block;
+}
+
+.outset {
+	position: relative;
+	left: 50%;
+	margin-left: -50vw;
+	width: 100vw;
+}
+
+// Images.
+img.alignleft {
+	max-width: 50%;
+	margin: 0 1.5em 1.5em 0;
+}
+
+img.alignright {
+	max-width: 50%;
+	margin: 0 0 1.5em 1.5em;
+}
+
+// Images with captions.
+.wp-caption.alignleft {
+	max-width: 50%;
+	margin: 0 1.5em 1.125em 0;
+}
+.wp-caption.alignright {
+	max-width: 50%;
+	margin: 0 0 1.125em 1.5em;
+}
+
+// Images on the centered page template.
+// .single.no-sidebar .entry-content,
+// .page-template-centered .entry-content,
+// .page-template-default.no-sidebar .entry-content {
+// 	img,
+// 	.wp-caption {
+// 		@include with_layout( $susy-static ) {
+// 			@media screen and ( min-width: span( 10 of 8 ) + ( 2 * $font__size-body-px * $font__line-height-body ) ) {
+// 				&.alignleft {
+// 					max-width: span( 5 of 8 );
+// 					margin-right: gutter();
+// 					margin-left: span( 1 wide ) * ( -1 );
+// 				}
+// 				&.alignright {
+// 					max-width: span( 5 of 8 );
+// 					margin-right: span( 1 wide ) * ( -1 );
+// 					margin-left: gutter();
+// 				}
+// 				&.alignnone.size-large,
+// 				&.alignnone.size-full {
+// 					max-width: span( 10 of 8 );
+// 					margin-right: span( 1 wide ) * ( -1 );
+// 					margin-left: span( 1 wide ) * ( -1 );
+// 				}
+// 			}
+// 			@media screen and ( min-width: span( 12 of 8 ) + ( 2 * $font__size-body-px * $font__line-height-body ) ) {
+// 				&.alignleft {
+// 					max-width: span( 6 of 8 );
+// 					margin-right: gutter();
+// 					margin-left: span( 2 wide ) * ( -1 );
+// 				}
+// 				&.alignright {
+// 					max-width: span( 6 of 8 );
+// 					margin-right: span( 2 wide ) * ( -1 );
+// 					margin-left: gutter();
+// 				}
+// 				&.alignnone.size-large,
+// 				&.alignnone.size-full {
+// 					max-width: span( 12 of 8 );
+// 					margin-right: span( 2 wide ) * ( -1 );
+// 					margin-left: span( 2 wide ) * ( -1 );
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// Blockquotes.
+blockquote.alignleft {
+	width: 50%;
+	margin: 1.125em 1.125em 1.125em 0;
+	@media screen and ( min-width: $sm ) {
+		margin: 2.25em 2.25em 2.25em 0;
+	}
+}
+
+blockquote.alignright {
+	width: 50%;
+	margin: 1.125em 0 1.125em 1.125em;
+	@media screen and ( min-width: $sm ) {
+		margin: 2.25em 0 2.25em 2.25em;
+	}
+}
+
+// Blockquotes on the centered page template.
+// .single.no-sidebar .entry-content,
+// .page-template-centered .entry-content,
+// .page-template-default.no-sidebar .entry-content {
+// 	blockquote {
+// 		@include with_layout( $susy-static ) {
+// 			@media screen and ( min-width: span( 10 of 8 ) + ( 2 * $font__size-body-px * $font__line-height-body ) ) {
+// 				&.alignleft {
+// 					margin-right: gutter();
+// 					margin-left: span( 1 wide ) * ( -1 );
+// 				}
+// 				&.alignright {
+// 					margin-right: span( 1 wide ) * ( -1 );
+// 					margin-left: gutter();
+// 				}
+// 			}
+// 			@media screen and ( min-width: span( 12 of 8 ) + ( 2 * $font__size-body-px * $font__line-height-body ) ) {
+// 				&.alignleft {
+// 					margin-right: gutter();
+// 					margin-left: span( 2 wide ) * ( -1 );
+// 				}
+// 				&.alignright {
+// 					margin-right: span( 2 wide ) * ( -1 );
+// 					margin-left: gutter();
+// 				}
+// 			}
+// 		}
+// 	}
+// }
