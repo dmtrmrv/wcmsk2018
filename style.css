@@ -872,8 +872,8 @@ img[class*='wp-image-'] {
 .assistive-text,
 .site-description,
 .entry-meta,
-.page-slug-wordcamp-moscow-2018 .entry-header,
-.page-slug-wordcamp-moscow-2018 .edit-link {
+.page-slug-wordcamp-moscow .entry-header,
+.page-slug-wordcamp-moscow .edit-link {
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -884,18 +884,18 @@ img[class*='wp-image-'] {
 .assistive-text:hover,
 .site-description:hover,
 .entry-meta:hover,
-.page-slug-wordcamp-moscow-2018 .entry-header:hover,
-.page-slug-wordcamp-moscow-2018 .edit-link:hover,
+.page-slug-wordcamp-moscow .entry-header:hover,
+.page-slug-wordcamp-moscow .edit-link:hover,
 .assistive-text:active,
 .site-description:active,
 .entry-meta:active,
-.page-slug-wordcamp-moscow-2018 .entry-header:active,
-.page-slug-wordcamp-moscow-2018 .edit-link:active,
+.page-slug-wordcamp-moscow .entry-header:active,
+.page-slug-wordcamp-moscow .edit-link:active,
 .assistive-text:focus,
 .site-description:focus,
 .entry-meta:focus,
-.page-slug-wordcamp-moscow-2018 .entry-header:focus,
-.page-slug-wordcamp-moscow-2018 .edit-link:focus {
+.page-slug-wordcamp-moscow .entry-header:focus,
+.page-slug-wordcamp-moscow .edit-link:focus {
 	display: block;
 	clip: auto !important;
 	z-index: 100000;
@@ -1383,7 +1383,7 @@ body.admin-bar #tix {
 	display: none;
 }
 
-.page-slug-wordcamp-moscow-2017 .widget-area,
+.page-slug-wordcamp-moscow .widget-area,
 .page-slug-schedule .widget-area,
 .page-slug-sponsors .widget-area,
 .page-slug-tickets .widget-area {
@@ -1392,11 +1392,11 @@ body.admin-bar #tix {
 
 /* Homepage */
 
-.page-slug-wordcamp-moscow-2018 .site-footer {
+.page-slug-wordcamp-moscow .site-footer {
 	border-top: none;
 }
 
-.page-slug-wordcamp-moscow-2018 .entry-content {
+.page-slug-wordcamp-moscow .entry-content {
 	margin-bottom: 0;
 }
 
@@ -1708,7 +1708,7 @@ body.admin-bar #tix {
 		margin-bottom: 4.5em;
 	}
 
-	.page-slug-wordcamp-moscow-2017 .site-content,
+	.page-slug-wordcamp-moscow .site-content,
 	.page-slug-schedule .site-content,
 	.page-slug-sponsors .site-content,
 	.page-slug-tickets .site-content {
