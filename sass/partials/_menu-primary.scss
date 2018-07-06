@@ -161,7 +161,7 @@ $dash_width: 1.5em;
 }
 
 .accent-menu-item a {
-	background-color: #7743c7 !important;
+	background-color: $color__accent-secondary !important;
 	color: #fff !important;
 	font-weight: 700;
 	padding: 18px !important;
