@@ -280,7 +280,7 @@ big {
 /* Links */
 
 a {
-	color: #c2b4a6;
+	color: #f04a58;
 	background-color: transparent;
 	text-decoration: none;
 }
@@ -288,7 +288,7 @@ a {
 a:hover,
 a:active {
 	outline: 0;
-	color: #c2b4a6;
+	color: #f04a58;
 	text-decoration: underline;
 }
 
@@ -296,7 +296,7 @@ a:focus {
 	outline: thin dotted;
 	outline: 5px auto -webkit-focus-ring-color;
 	outline-offset: -2px;
-	color: #c2b4a6;
+	color: #f04a58;
 	text-decoration: underline;
 }
 
@@ -560,7 +560,7 @@ input[type='url']:focus,
 input[type='password']:focus,
 input[type='search']:focus,
 textarea:focus {
-	border-color: #c2b4a6;
+	border-color: #f04a58;
 	outline: 0;
 }
 
@@ -681,9 +681,9 @@ input:focus[type='submit'] {
 .button-accent,
 input.search-submit[type='submit'],
 #tix input[type=submit] {
-	border-color: #c2b4a6;
+	border-color: #f04a58;
 	color: #fff;
-	background-color: #c2b4a6;
+	background-color: #f04a58;
 }
 
 .button-accent:hover,
@@ -692,9 +692,9 @@ input.search-submit:hover[type='submit'],
 .button-accent:focus,
 input.search-submit:focus[type='submit'],
 #tix input:focus[type=submit] {
-	border-color: #c2b4a6;
+	border-color: #f04a58;
 	color: #fff;
-	background-color: #d7cec4;
+	background-color: #f47983;
 	text-decoration: none;
 }
 
@@ -713,16 +713,16 @@ input.search-submit:focus[type='submit'],
 }
 
 .button-border {
-	border-color: #c2b4a6;
-	color: #c2b4a6;
+	border-color: #f04a58;
+	color: #f04a58;
 	background-color: transparent;
 }
 
 .button-border:hover,
 .button-border:focus {
-	border-color: #c2b4a6;
+	border-color: #f04a58;
 	color: #fff;
-	background-color: #c2b4a6;
+	background-color: #f04a58;
 	text-decoration: none;
 }
 
@@ -975,7 +975,7 @@ img[class*='wp-image-'] {
 	width: 3em;
 	height: 3em;
 	padding: 0;
-	background-color: #c2b4a6;
+	background-color: #f04a58;
 	font-size: 16px;
 	text-align: left;
 	text-indent: -9999px;
@@ -987,7 +987,7 @@ img[class*='wp-image-'] {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-	background-color: rgba(194, 180, 166, 0.9);
+	background-color: rgba(240, 74, 88, 0.9);
 }
 
 .menu-toggle:before,
@@ -1513,7 +1513,7 @@ body.admin-bar #tix {
 	padding: 7.5% 0;
 	padding: 7.5% 0 calc( 7.5% - 1.5em);
 	color: #fff;
-	background-color: #c2b4a6;
+	background-color: #f04a58;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-size: cover;
@@ -1555,7 +1555,7 @@ body.admin-bar #tix {
 		margin: 0;
 		padding: 0.75em 0 0.75em;
 		border: 1px solid rgba(88, 88, 88, 0.15);
-		border-top: 3px solid #c2b4a6;
+		border-top: 3px solid #f04a58;
 		background-color: #fff;
 		text-align: left;
 	}
